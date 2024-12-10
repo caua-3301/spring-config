@@ -1,4 +1,5 @@
-spring.datasource.url=mysql://root:rUPdLtHPcKNhIsTdbxbodeZHekZMClyF@autorack.proxy.rlwy.net:34368/railway
+
+spring.datasource.url=jdbc:mysql://root:rUPdLtHPcKNhIsTdbxbodeZHekZMClyF@autorack.proxy.rlwy.net:34368/railway
 spring.datasource.username=root
 spring.datasource.password=rUPdLtHPcKNhIsTdbxbodeZHekZMClyF
 
