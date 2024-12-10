@@ -1,11 +1,38 @@
+# Configuração do Banco de Dados
 
-spring.datasource.url=jdbc:mysql://root:rUPdLtHPcKNhIsTdbxbodeZHekZMClyF@autorack.proxy.rlwy.net:34368/railway
-spring.datasource.username=root
-spring.datasource.password=rUPdLtHPcKNhIsTdbxbodeZHekZMClyF
+No arquivo `application.properties`, configure os seguintes parâmetros para conectar ao banco de dados PostgreSQL:
 
-spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
-spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
+```properties
+# Informações da aplicação
+spring.application.name=agendar
 
+# Configuração do banco de dados
+spring.datasource.url=jdbc:postgresql://localhost:5432/agenda
+spring.datasource.username=postgres
+spring.datasource.password=postgres
+
+# Configurações do JPA
 spring.jpa.hibernate.ddl-auto=update
-spring.jpa.open-in-view=true
 spring.jpa.show-sql=true
+```
+
+### Modelo para salvar um usuário e um evento
+
+#### Usuário
+
+    {
+        "cpf": "",
+        "nome": "",
+        "email": "",
+        "dataNascimento": ""
+    }
+
+#### Evento
+
+    {
+        "nome": "",
+        "descricao": "",
+        "organizacao": "",
+        "dataInicio": "",
+        "dataFim": ""
+    }
